@@ -1,0 +1,92 @@
+/* SECTION DEVIS */
+.devis {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+.devis h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.devis p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* FORMULAIRE */
+form {
+    width: 50%;
+    max-width: 500px; /* Empêche le formulaire de devenir trop large */
+    min-width: 300px; /* Garde une bonne taille sur mobile */
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem; /* Ajuste la taille du texte */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Meilleure lisibilité sur mobile */
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background: #cc5500;
+}
+
+/* ✅ RESPONSIVE : ADAPTATION POUR LES PETITS ÉCRANS */
+@media screen and (max-width: 768px) {
+    form {
+        width: 5%; /* Plus large sur mobile */
+        padding: 15px;
+    }
+
+    .devis h2 {
+        font-size: 1.8em;
+    }
+
+    .devis p {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+

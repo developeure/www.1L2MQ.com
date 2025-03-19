@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background: #004080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.menu-toggle {
+    background: #ff6600;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: #004080;
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li:hover {
+    background: #ff6600;
+}
+
+/* SECTION HERO */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology,measurement') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #cc5500;
+}
+
+/* SECTION PRESENTATION */
+.presentation {
+    padding: 40px;
+    text-align: center;
+}
+
+.presentation h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.presentation p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}

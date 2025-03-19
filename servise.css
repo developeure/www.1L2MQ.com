@@ -1,0 +1,78 @@
+/* SECTION SERVICES */
+.services {
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.services h2 {
+    
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #004080;
+}
+
+.service p {
+    font-size: 1em;
+    color: #333;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION CALL TO ACTION */
+.cta {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #cc5500;
+}

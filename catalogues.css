@@ -1,0 +1,74 @@
+/* SECTION CATALOGUE */
+.catalogue {
+    text-align: center;
+    padding: 40px;
+    
+}
+
+.catalogue h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* GRILLE DE PRODUITS */
+.catalogue-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    color: #004080;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product .btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.product .btn:hover {
+    background: #cc5500;
+}
+
+/* ✅ RESPONSIVE : ADAPTATION POUR LES PETITS ÉCRANS */
+@media screen and (max-width: 768px) {
+    .catalogue-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        max-width: 300px;
+    }
+}

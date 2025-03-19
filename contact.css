@@ -1,0 +1,110 @@
+/* SECTION CONTACT */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* CONTAINER FLEXIBLE (FORMULAIRE + INFO) */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* FORMULAIRE */
+form {
+    width: 45%;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background: #cc5500;
+}
+
+/* INFO CONTACT */
+.contact-info {
+    width: 45%;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    width: 40px;
+}
+
+
+
+/* MAP */
+.map-container {
+    margin-top: 20px;
+}
+
+/* ✅ RESPONSIVE : ADAPTATION POUR LES PETITS ÉCRANS */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .contact-info {
+        width: 90%;
+    }
+}
